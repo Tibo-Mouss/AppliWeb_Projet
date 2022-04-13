@@ -1,0 +1,5 @@
+#Wed Apr 13 17:07:16 CEST 2022
+configuration*?=B31145F6CDDE9AEC03AA2B6952612C7C9C512534
+module-resource*?\:/wildfly-checkstyle/suppressions.xml=DD3FD5987C62C3034A4613F83C42B24683BCFC2E
+D\:\\Documents\\N7\\AppWeb\\quickstartTEST\\helloworld\\src\\main\\java\\org\\jboss\\as\\quickstarts\\helloworld\\HelloService.java=1649862420964
+D\:\\Documents\\N7\\AppWeb\\quickstartTEST\\helloworld\\src\\main\\java\\org\\jboss\\as\\quickstarts\\helloworld\\HelloWorldServlet.java=1649862392050
