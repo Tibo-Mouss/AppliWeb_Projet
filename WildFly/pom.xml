@@ -45,6 +45,7 @@
     <properties>
         <!-- The versions for BOMs, Dependencies and Plugins -->
         <version.server.bom>26.0.0.Final</version.server.bom>
+        <checkstyle.skip>true</checkstyle.skip>
     </properties>
 
     <repositories>
@@ -141,4 +142,6 @@
 
     </dependencies>
 
+
 </project>
+
