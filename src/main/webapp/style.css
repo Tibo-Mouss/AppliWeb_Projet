@@ -12,10 +12,43 @@ body {
     background-color: lightblue;
   }
 
-h1 {
+.main_title {
+    font-family: mangabaregular;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 100;
+}
+.main_title a { /* Applique les changements aux balises a contenues dans la class main_title */
+    text-decoration: none;
+    color:darkblue;
+}
+.main_title a:hover {
+    /* Changements quand on passe la souris dessus */
+}
+h2 {
     font-family: mangabaregular;
     text-align: center;
-    font-size: 100;
+    font-size: 70;
+}
+
+
+.house_homepage {
+    height:50px;
+    width:50px;
+    object-fit: cover;
+}
+.loupe_homepage {
+    width: 20px;
+    height: 20px;
+}
+.top_bar_text a {
+    color: brown;
+    text-decoration: none;
+    font-family: mangabaregular;
+    font-size: 30;
+}
+.searchbar {
+    border-width: 0px;
 }
 
   
@@ -37,8 +70,6 @@ h1 {
     height: 100%;
     object-fit: cover;
 }
-
-
 
 .centered_table {
     width : 92%;
