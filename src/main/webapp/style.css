@@ -106,16 +106,16 @@ h2 {
 .stars {
     position: absolute;
     top: 70%;
-    left: 16%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .stars img {
-    width: 20px;
+    width: 70%;
 }
 
 #tableHomePage td td,
 #tableHomePage td table {
     border-spacing: 0px;
     border:0px solid transparent;
-    text-align:center;
 }
