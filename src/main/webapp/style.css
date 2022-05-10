@@ -90,6 +90,8 @@ h2 {
     left:0;
 }
 
+/* Titre du manga sur la couverture quand
+tu passes la souris dessus */
 .text_on_image {
     text-align: center;
     position: absolute;
@@ -110,12 +112,54 @@ h2 {
     margin-right: 10%;
 }
 
+/* taille des étoiles */
 .stars img {
     width: 70%;
 }
 
+/* Cible les sous tableaux d'étoiles */
 #tableHomePage td td,
 #tableHomePage td table {
     border-spacing: 0px;
     border:0px solid transparent;
+}
+
+
+
+#tableau_description {
+    border : 3px solid;
+}
+
+#tableau_description table,
+#tableau_description tr,
+#tableau_description td,
+#tableau_description tbody {
+    border: 0px solid;
+    width: 50%;
+    text-align: center;
+}
+
+#manga_cover_description {
+    height: 500px;
+    border: 2px white solid;
+}
+
+#texte_description_manga h2,
+#texte_description_manga h3,
+#texte_description_manga h4,
+#texte_description_manga p
+ {
+    text-align: left;
+}
+
+
+
+#tableau_chapitres {
+    margin-left: 10%;
+    border : 2px solid black;
+    width: 80%;
+}
+
+#tableau_chapitres tr {
+    margin-left: 20px;
 }
