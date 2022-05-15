@@ -37,9 +37,21 @@
 </head>
 <body>
 
-<div class="main_title">
-  <a href="index.html">Scans Reader</a>
-</div>
+<table clas="centered_table">
+  <tbody>
+    <tr>
+      <td>
+        <div class="main_title">
+          <a href="index.html">Scans Reader</a>
+        </div>
+      </td>
+      <td>
+        <a href="login.html">Login</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 <table class="centered_table top_bar_text">
   <tbody>

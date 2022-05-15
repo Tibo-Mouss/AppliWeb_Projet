@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ServletTest
  */
-@WebServlet("/ServletTest")
+@WebServlet("/Servlet")
 public class HelloWorldServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -28,40 +28,22 @@ public class HelloWorldServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		//response.getWriter().println("<html><body>Hello World !</body></html>");
 		
 		
+		/* Exemple calculatrice 
 		String nb1 = request.getParameter("nb1");
 		String nb2 = request.getParameter("nb2");
 		int resultat = Integer.parseInt(nb1) + Integer.parseInt(nb2);
 		response.getWriter().println("<html><body>le resultat est : " + resultat +"</body></html>");
+		*/
+
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		String login_register = request.getParameter("op");
+		response.getWriter().println("<html><body>L'username : " + username +
+		" puis password : " + password + 
+		" puis c'est un : " + login_register + "</body></html>");
 		
-		/*
-		PrintWriter out = response.getWriter();
-		try {
-			String db_url = "jdbc:hsqldb:hsql://localhost/xdb";
-			String db_user = "sa";
-			Class.forName("org.hsqldb.jdbcDriver");
-			Connection con = DriverManager.getConnection(db_url, db_user, null);
-			response.setContentType("text/html");
-			String op = request.getParameter("op");
-			if (op.equals("add")) {
-				String nb1 = request.getParameter("nb1");
-				String nb2 = request.getParameter("nb2");
-				int resultat = Integer.parseInt(nb1) + Integer.parseInt(nb2);
-				response.getWriter().println("<html><body>le resultat est : " + resultat +"</body></html>");
-			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} finally {
-			
-		}*/
 	}
 
 	/**

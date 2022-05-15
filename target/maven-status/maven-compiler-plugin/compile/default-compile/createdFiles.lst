@@ -1,2 +1,5 @@
 org\jboss\as\quickstarts\helloworld\HelloWorldServlet.class
+org\jboss\as\Review.class
+org\jboss\as\Manga.class
+org\jboss\as\User.class
 org\jboss\as\quickstarts\helloworld\HelloService.class
