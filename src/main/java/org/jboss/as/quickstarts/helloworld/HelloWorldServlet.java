@@ -2,6 +2,7 @@ package org.jboss.as.quickstarts.helloworld;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -40,9 +41,15 @@ public class HelloWorldServlet extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		String login_register = request.getParameter("op");
-		response.getWriter().println("<html><body>L'username : " + username +
-		" puis password : " + password + 
-		" puis c'est un : " + login_register + "</body></html>");
+		if (login_register.equals("login") || login_register.equals("register")) {
+			response.getWriter().println("<html><body>L'username : " + username +
+				" puis password : " + password + 
+				" puis c'est un : " + login_register + "</body></html>");
+		}
+		else {
+			RequestDispatcher disp = request.getRequestDispatcher("home.jsp");
+			disp.forward(request, response);
+		}
 		
 	}
 
