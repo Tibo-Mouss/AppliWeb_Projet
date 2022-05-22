@@ -38,17 +38,26 @@ public class HelloWorldServlet extends HttpServlet {
 		response.getWriter().println("<html><body>le resultat est : " + resultat +"</body></html>");
 		*/
 
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
+
 		String login_register = request.getParameter("op");
-		if (login_register.equals("login") || login_register.equals("register")) {
-			response.getWriter().println("<html><body>L'username : " + username +
+
+		switch(op) {
+			case "login":
+			case "register":
+				String username = request.getParameter("username");
+				String password = request.getParameter("password");
+				response.getWriter().println("<html><body>L'username : " + username +
 				" puis password : " + password + 
 				" puis c'est un : " + login_register + "</body></html>");
-		}
-		else {
-			RequestDispatcher disp = request.getRequestDispatcher("home.jsp");
-			disp.forward(request, response);
+				break;
+			case "homepage":
+				RequestDispatcher disp = request.getRequestDispatcher("home.jsp");
+				disp.forward(request, response);
+				break;
+			default:
+				response.getWriter().println("<html><body>L'username : " +
+				"Erreur, l'op spécifié n'est pas pris en charge"
+				+ "</body></html>");
 		}
 		
 	}

@@ -10,7 +10,7 @@ document.write(`
         </a>
       </th>
       <th>
-        <a id="categories" href="categories.html">Categories</a>
+        <a id="categories" href="categories.html">Cat&eacutegories</a>
       </th>
       <th>
         <a href="ma_liste.html">Ma liste</a>
