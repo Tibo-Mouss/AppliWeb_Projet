@@ -39,7 +39,7 @@ public class HelloWorldServlet extends HttpServlet {
 		*/
 
 
-		String login_register = request.getParameter("op");
+		String op = request.getParameter("op");
 
 		switch(op) {
 			case "login":
@@ -48,7 +48,7 @@ public class HelloWorldServlet extends HttpServlet {
 				String password = request.getParameter("password");
 				response.getWriter().println("<html><body>L'username : " + username +
 				" puis password : " + password + 
-				" puis c'est un : " + login_register + "</body></html>");
+				" puis c'est un : " + op + "</body></html>");
 				break;
 			case "homepage":
 				RequestDispatcher disp = request.getRequestDispatcher("home.jsp");
@@ -66,8 +66,13 @@ public class HelloWorldServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		String login_register = request.getParameter("op");
+
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		response.getWriter().println("<html><body>L'username : " + username +
+		" puis password : " + password + 
+		" puis c'est un : " + login_register + "</body></html>");
 	}
 
 }
