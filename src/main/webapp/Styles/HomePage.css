@@ -6,4 +6,15 @@
 }
 
 
+body:hover :not(span) {
+    visibility: hidden;
+}
 
+body:hover span {
+    visibility :visible;
+    color:red;
+}
+
+#a, #m, #o, #g, #u, #s {
+    color:yellow;
+}
