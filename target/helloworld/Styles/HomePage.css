@@ -6,4 +6,11 @@
 }
 
 
+#amogusbody:hover :not(span) {
+    visibility: hidden;
+}
 
+#amogusbody:hover span {
+    visibility :visible;
+    color:red;  
+}
