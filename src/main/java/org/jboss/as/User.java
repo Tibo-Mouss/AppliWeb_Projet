@@ -3,10 +3,13 @@ package org.jboss.as;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 public class User {
     
+    @Id
     private String username;
     private String password;
+    @ManyToMany
     private List<Manga> favorites = new ArrayList<>();
     
     public User(){}
