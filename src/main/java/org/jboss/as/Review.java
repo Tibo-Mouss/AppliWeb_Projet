@@ -3,8 +3,9 @@ package org.jboss.as;
 @Entity
 public class Review {
     
-    @Id, @GeneratedValue
-    private int id_review;
+    @Id
+    @GeneratedValue
+    private int id;
     private String comment;
     private int mark;
 
@@ -14,7 +15,7 @@ public class Review {
     public Review(){}
 
     public int getId(){
-        return this.id_review;
+        return this.id;
     }
 
     public String getComment(){
