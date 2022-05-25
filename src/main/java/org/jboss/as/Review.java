@@ -22,7 +22,7 @@ public class Review {
         return this.comment;
     }
 
-    public int getMark(){
+    public int getGrade(){
         return this.grade;
     }
 
@@ -34,8 +34,8 @@ public class Review {
         this.comment = com;
     }
 
-    public void setMark(int mark){
-        this.grade = mark;
+    public void setGrade(int grade){
+        this.grade = grade;
     }
 
     public void setAuthor(User mec){
