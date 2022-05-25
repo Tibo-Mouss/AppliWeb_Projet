@@ -6,15 +6,11 @@
 }
 
 
-body:hover :not(span) {
+#amogusbody:hover :not(span) {
     visibility: hidden;
 }
 
-body:hover span {
+#amogusbody:hover span {
     visibility :visible;
     color:red;
-}
-
-#a, #m, #o, #g, #u, #s {
-    color:yellow;
 }
