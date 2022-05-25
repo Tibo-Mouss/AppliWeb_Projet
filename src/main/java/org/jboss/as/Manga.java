@@ -3,6 +3,7 @@ package org.jboss.as;
 import java.net.URL;
 import java.util.Date;
 import java.util.List;
+import javax.ejb.*;
 
 @Entity
 public class Manga {
