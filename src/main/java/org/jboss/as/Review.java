@@ -6,9 +6,9 @@ public class Review {
     
     @Id
     @GeneratedValue
-    private int id_review;
+    private int id;
     private String comment;
-    private int mark;
+    private int grade;
 
     @ManyToOne
     private User author_com;
@@ -16,15 +16,15 @@ public class Review {
     public Review(){}
 
     public int getId(){
-        return this.id_review;
+        return this.id;
     }
 
     public String getComment(){
         return this.comment;
     }
 
-    public int getMark(){
-        return this.mark;
+    public int getGrade(){
+        return this.grade;
     }
 
     public User getAuthor(){
@@ -35,8 +35,8 @@ public class Review {
         this.comment = com;
     }
 
-    public void setMark(int mark){
-        this.mark = mark;
+    public void setGrade(int grade){
+        this.grade = grade;
     }
 
     public void setAuthor(User mec){
