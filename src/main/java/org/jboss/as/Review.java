@@ -1,9 +1,11 @@
 package org.jboss.as;
 
+
 @Entity
 public class Review {
     
-    @Id, @GeneratedValue
+    @Id
+    @GeneratedValue
     private int id_review;
     private String comment;
     private int mark;

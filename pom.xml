@@ -113,10 +113,20 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
+
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>ejb</artifactId>
+            <host>somthing.com</host>
+            <version>3.0-public_review</version>
+        </dependency>
+
 
         <!-- Import the CDI API, we use provided scope as the API is included in WildFly -->
         <dependency>
