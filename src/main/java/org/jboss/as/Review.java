@@ -1,6 +1,8 @@
 package org.jboss.as;
 
 
+import javax.persistence.*;
+
 @Entity
 public class Review {
     

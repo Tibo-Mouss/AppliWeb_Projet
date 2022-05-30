@@ -5,6 +5,8 @@ import java.util.Date;
 import java.util.List;
 import javax.ejb.*;
 
+import javax.persistence.*;
+
 @Entity
 public class Manga {
 

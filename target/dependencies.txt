@@ -1,0 +1,6 @@
+digraph "org.wildfly.quickstarts:helloworld:war:27.0.0.Beta1-SNAPSHOT" { 
+	"org.wildfly.quickstarts:helloworld:war:27.0.0.Beta1-SNAPSHOT" -> "jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:provided" ; 
+	"org.wildfly.quickstarts:helloworld:war:27.0.0.Beta1-SNAPSHOT" -> "org.jboss.spec.javax.annotation:jboss-annotations-api_1.3_spec:jar:2.0.1.Final:provided" ; 
+	"org.wildfly.quickstarts:helloworld:war:27.0.0.Beta1-SNAPSHOT" -> "org.jboss.spec.javax.servlet:jboss-servlet-api_4.0_spec:jar:2.0.0.Final:provided" ; 
+	"jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:provided" -> "jakarta.inject:jakarta.inject-api:jar:1.0.5:provided" ; 
+ } 

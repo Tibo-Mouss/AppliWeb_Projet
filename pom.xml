@@ -121,10 +121,9 @@
     <dependencies>
 
         <dependency>
-            <groupId>javax.persistence</groupId>
-            <artifactId>ejb</artifactId>
-            <host>somthing.com</host>
-            <version>3.0-public_review</version>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
         </dependency>
 
 

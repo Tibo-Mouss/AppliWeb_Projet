@@ -7,11 +7,14 @@ import javax.ejb.Singleton;
 import org.jboss.as.Review;
 import org.jboss.as.User;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
 @Singleton
-public class Facade {
+public class FacadeTheComeback {
 
     @PersistenceContext
-    private EntityManager em;
+    EntityManager em;
     
     private List<Manga> mangas = new ArrayList();
     private List<User> users = new ArrayList();
