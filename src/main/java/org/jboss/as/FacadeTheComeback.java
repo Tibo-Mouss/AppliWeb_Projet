@@ -1,11 +1,8 @@
 package org.jboss.as;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 import javax.ejb.Singleton;
-
-import org.jboss.as.Review;
-import org.jboss.as.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -45,8 +42,23 @@ public class FacadeTheComeback {
         usr.getFavorites().add(mg);
     }
 
-    public void searchbyGenre(){
-        //TODO
+    public List<Manga> searchbyGenre(List<Genre> genres){
+        List<Manga> resultat = new ArrayList<Manga>(this.mangas);
+        ListIterator<Genre> itg = genres.listIterator();
+
+        while (itg.hasNext()){
+            ListIterator<Manga> itm = resultat.listIterator();
+            Genre genre = itg.next();
+            while(itm.hasNext()){
+                int ind = itm.nextIndex();
+                Manga temp = itm.next();
+                if (!temp.getGenres().contains(genre)){
+                    resultat.remove(ind);
+                }
+            }
+        }
+
+        return mangas;
     }
     //getReviews
     

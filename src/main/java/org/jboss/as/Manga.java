@@ -1,6 +1,7 @@
 package org.jboss.as;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import javax.ejb.*;
@@ -16,10 +17,10 @@ public class Manga {
 
     private String title;
     private URL cover;
-    private List<URL> chapters;
+    private List<URL> chapters = new ArrayList<URL>();
     private String author;
     private String description;
-    private List<Genre> genres;
+    private List<Genre> genres = new ArrayList<Genre>();
     private Date publication;
     private float grade;
 
