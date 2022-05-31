@@ -12,7 +12,7 @@ public class User {
     private String username;
     private String password;
     @ManyToMany
-    private List<Manga> favorites = new ArrayList<>();
+    private List<Manga> favorites = new ArrayList<>(); 
     
     public User(){}
 
