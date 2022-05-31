@@ -17,10 +17,16 @@ public class Manga {
 
     private String title;
     private URL cover;
+
+    @ElementCollection
     private List<URL> chapters = new ArrayList<URL>();
+
     private String author;
     private String description;
+
+    @ElementCollection
     private List<Genre> genres = new ArrayList<Genre>();
+    
     private Date publication;
     private float grade;
 

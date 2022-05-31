@@ -11,6 +11,7 @@ public class User {
     @Id
     private String username;
     private String password;
+    
     @ManyToMany
     private List<Manga> favorites = new ArrayList<>(); 
     
