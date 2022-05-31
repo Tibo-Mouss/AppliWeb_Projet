@@ -36,7 +36,7 @@ public class FacadeTheComeback {
 
 
 
-    public void addToFavorite(int idUser, int idManga){
+    public void addToFavorite(String idUser, int idManga){
         User usr = em.find(User.class, idUser);
         Manga mg = em.find(Manga.class, idManga);
         usr.getFavorites().add(mg);
@@ -61,7 +61,32 @@ public class FacadeTheComeback {
 
         return resultat;
     }
-    //getReviews
+
+    public boolean login(String id, String pswd){
+        User usr = em.find(User.class, id);
+        return this.users.contains(usr);
+    }
+
+    public boolean register(String idUser, String pswd){
+        if (em.find(User.class, idUser) == null){
+            return false;
+        }else{
+            User usr = new User();
+            usr.setPassword(pswd);
+            usr.setUsername(idUser);
+            this.users.add(usr);
+            em.persist(usr);
+            return true;
+        }
+    }
+    
+    public List<Manga> getFavourites(String userId){
+        return em.find(User.class, userId).getFavorites();
+    }
+
+    public List<Review> getReviews(String mangaId){
+        return em.find(Manga.class, mangaId).getReviews();
+    }
     
 
     

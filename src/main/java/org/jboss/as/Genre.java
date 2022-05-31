@@ -1,3 +1,3 @@
 package org.jboss.as;
 
-public enum Genre {Shonen, Seinen}
+public enum Genre {Shonen, Seinen, ecchi}
