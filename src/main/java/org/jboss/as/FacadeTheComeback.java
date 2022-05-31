@@ -49,16 +49,17 @@ public class FacadeTheComeback {
         while (itg.hasNext()){
             ListIterator<Manga> itm = resultat.listIterator();
             Genre genre = itg.next();
+            List<Manga> toRemove = new ArrayList<>();
             while(itm.hasNext()){
-                int ind = itm.nextIndex();
                 Manga temp = itm.next();
                 if (!temp.getGenres().contains(genre)){
-                    resultat.remove(ind);
+                    toRemove.add(temp);
                 }
             }
+            resultat.removeAll(toRemove);
         }
 
-        return mangas;
+        return resultat;
     }
     //getReviews
     

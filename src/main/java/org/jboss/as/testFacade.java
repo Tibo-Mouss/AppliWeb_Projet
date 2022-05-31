@@ -22,6 +22,7 @@ public class testFacade {
 
         List<Genre> criteres = new ArrayList<Genre>();
         criteres.add(Genre.Shonen);
+        criteres.add(Genre.Seinen);
 
         System.out.print(f.searchbyGenre(criteres));
     }
